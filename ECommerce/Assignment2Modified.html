@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <form action="Assignment3.php" method='post'>
+  <div>
+    <input type='text' size='13' maxlength='18' name='first_name_field' id='text_field'  placeholder='First Name' required autofocus title='Insert text here' autocomplete pattern='[A-Za-z]{2,18}' />
+    <input type='text' size='13' maxlength='18' name='last_name_field' id='text_field'  placeholder='Last Name' required autofocus title='Insert text here' autocomplete pattern='[A-Za-z]{2,18}' />
+  </div>
+  <div>
+    <input type='text' size='13' maxlength='32' name='email_input_field' id='text_field'  placeholder='Email' required autofocus title='Enter Email Here' autocomplete pattern='Email[A-Za-z]{2,32]}' />
+    <input type='password' size='13' maxlength='32' name='password_input_field' id='password_field' placeholder='Password' required autofocus title='Enter Password Here' autocomplete pattern='[A-Za-z]{2,32]}' />
+  </div>
+  <div>
+    <fieldset><legend>Hats</legend>
+    <div>
+      The Wellington <input type='checkbox' name='unchecked_checkbox[]' id='checkbox_one' value='W' />
+    </div>
+    <div>
+      Continental <input type='checkbox' name='unchecked_checkbox[]' id='checkbox_two' value='C'/>
+    </div>
+    <div>
+      Navy <input type='checkbox' name='unchecked_checkbox[]' id='checkbox_three' value='N'/>
+    </div>
+    <div>
+      Army <input type='checkbox' name='unchecked_checkbox[]' id='checkbox_four' value='A' />
+    </div>
+    <div>
+      Clerical <input type='checkbox' name='unchecked_checkbox[]' id='checkbox_five' value='C'/>
+    </div>
+    <div>
+      The Paris Beau <input type='checkbox' name='unchecked_checkbox[]' id='checkbox_six' value='P'/>
+    </div>
+    <div>
+      The Regent <input type='checkbox' name='unchecked_checkbox[]' id='checkbox_seven' value='R'/>
+    </div>
+    <div>
+      Dorsay <input type='checkbox' name='unchecked_checkbox[]' id='checkbox_eight' value='D'/>
+    </div>
+  </div>
+  <div>
+    <fieldset><legend>Shipping</legend>
+      <input type='radio' name='radio_buttons' id='first_button' value='UPS' /> UPS
+      <input type='radio' name='radio_buttons' id='second_button' value='USPS' /> USPS
+      <input type='radio' name='radio_buttons' id='third_button' value='FEDEX' /> FEDEX
+    </fieldset>
+  </div>
+  <div>
+    <textarea name='project_textarea' id='textarea_input' placeholder='Address' rows='5' cols='25'></textarea>
+  </div>
+  <div>
+    <label for='first_pull_down_menu'>Gift Wrap Options </label>
+    <select name='first_pull_down' id='first_pull_down' size='1' >
+		    <option value="No_Gift_Wrap" selected='selected'>No Gift Wrap</option>
+        <option value="Gift_Wrap">Gift Wrap</option>
+        <option value="Gift_Wrap_With_Special">Special Option Gift Wrap</option>
+    </select>
+  </div>
+  <div>
+    <input type='submit' name='submit_button' id='submit_button' value='Submit' />
+    <input type='reset' name='reset_button' id='reset_button' value='Reset' />
+  </div>
+  </form>
+</body>
+</html>
